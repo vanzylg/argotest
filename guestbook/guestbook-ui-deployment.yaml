@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: guestbook-ui
-  annotations:
+  labels:
     backstage.io/kubernetes-id: guestbook
     backstage.io/techdocs-ref: guestbook
 spec:
@@ -15,7 +15,6 @@ spec:
     metadata:
       labels:
         app: guestbook-ui
-      annotations:
         backstage.io/kubernetes-id: guestbook
         backstage.io/techdocs-ref: guestbook
     spec:
