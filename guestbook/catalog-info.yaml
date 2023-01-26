@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "guestbook"
+  annotations:
+    backstage.io/kubernetes-id: guestbook
+    backstage.io/techdocs-ref: guestbook
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
