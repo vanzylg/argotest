@@ -5,6 +5,7 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: guestbook
     backstage.io/techdocs-ref: guestbook
+    argocd/app-name: guestbook
 spec:
   type: service
   owner: user:guest
