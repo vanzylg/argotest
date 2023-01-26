@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   name: guestbook-ui
   labels:
-    backstage.io/kubernetes-id: guestbook
-    backstage.io/techdocs-ref: guestbook
+    backstage.io/kubernetes-id: guestbook-ui
+    backstage.io/techdocs-ref: guestbook-ui
 spec:
   replicas: 1
   revisionHistoryLimit: 3
@@ -15,8 +15,8 @@ spec:
     metadata:
       labels:
         app: guestbook-ui
-        backstage.io/kubernetes-id: guestbook
-        backstage.io/techdocs-ref: guestbook
+        backstage.io/kubernetes-id: guestbook-ui
+        backstage.io/techdocs-ref: guestbook-ui
     spec:
       containers:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
